@@ -1,0 +1,56 @@
+.cards {
+  width: 40em;
+  height: 10em;
+  border: solid 1px #ccc;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+
+.card {
+  border: solid 2px #000000;
+  flex: 1;
+  margin: 0.5em;
+  border-radius: 0.25em;
+  display: flex;
+  font-size: 1em;
+}
+.card.green {
+  color: green;
+}
+.card.red {
+  color: red;
+}
+.card.blue {
+  color: blue;
+}
+
+.card .shapes {
+  flex: auto;
+  display: flex;
+}
+.card .rank {
+  margin: 0.5em;
+}
+
+.card .rank.bottom-right {
+  transform: rotate(180deg);
+}
+
+.card .shapes {
+  justify-content: center;
+  align-items: center;
+}
+
+.card .shapes.single_shape {
+  font-size: 48px;
+}
+
+.card .shapes.multiple_shapes {
+  flex-wrap: wrap;
+}
+.card .shapes.multiple_shapes div {
+  width: 1em;
+  height: 1em;
+}
